@@ -244,6 +244,7 @@ img {
     margin: 10px;
 }
 
+
 @media screen and (max-width:1200px) {
     .grid-container {
         width: 100%;
@@ -326,7 +327,7 @@ img {
     background-color: rgba(189, 192, 32, 0.671);
 }
 
-/*PRODUCTOS*/
+
 #productos-nuevo {
     grid-area: productos;
 }
@@ -379,7 +380,6 @@ input:focus {
     outline: none;
 }
 
-/* El identifier de las keyframes es el nombre */
 @keyframes cargando {
     0% {
         width: 0;
@@ -412,4 +412,47 @@ h1 {
     width: 60%;
     height: 3px;
 
+}
+
+#header-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/img/fondowood);
+    border: 1px solid black; 
+}
+
+
+#header-flex img {
+    width: 200px;
+    height: 200px;
+    padding-right: 12%;
+    margin-top: 10px;
+}
+
+.lista-navegacion_flex {
+    display: flex;
+    gap: 1.9rem;
+    justify-content: center;
+}
+
+.lista-navegacion_flex li {
+    font-size: 1.9rem;
+}
+
+.section-flex{
+    display: flex;
+    border: 2px solid black;
+    justify-content: center;
+    padding: 30px;
+}
+
+
+.tamano{
+    width: 500px;
+    height: 500px;
+}
+
+.set{
+    margin: 80px;
 }
