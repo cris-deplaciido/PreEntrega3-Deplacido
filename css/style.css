@@ -407,7 +407,7 @@ h1 {
     }
 }
 
-.linea-horizontal{
+.linea-horizontal {
     background-color: rgb(19, 1, 1);
     width: 60%;
     height: 3px;
@@ -419,7 +419,7 @@ h1 {
     justify-content: center;
     align-items: center;
     background-image: url(/img/fondowood);
-    border: 1px solid black; 
+    border: 1px solid black;
 }
 
 
@@ -440,7 +440,7 @@ h1 {
     font-size: 1.9rem;
 }
 
-.section-flex{
+.section-flex {
     display: flex;
     border: 2px solid black;
     justify-content: center;
@@ -448,11 +448,11 @@ h1 {
 }
 
 
-.tamano{
+.tamano {
     width: 500px;
     height: 500px;
 }
 
-.set{
+.set {
     margin: 80px;
 }
