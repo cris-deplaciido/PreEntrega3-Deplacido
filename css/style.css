@@ -1,0 +1,459 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+h2 {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+.grid-container {
+    width: 80%;
+    margin: auto;
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 300px 100px auto 100px;
+    grid-template-areas:
+        "header header header"
+        "nav nav nav"
+        "main main aside"
+        "footer footer footer"
+    ;
+}
+
+
+
+
+.encabezado {
+    background-image: url(../img/fondoclaro2.jpg);
+    grid-area: header;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.encabezado img {
+    width: 350px;
+    height: 250px;
+}
+
+.conocemos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.conocemos img {
+    width: 300px;
+    height: 350px;
+}
+
+.menu {
+    background-image: url(../img/fondo.jpg);
+    grid-area: nav;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: rgb(5, 0, 0);
+}
+
+.contenido {
+    background-image: url(../img/fondo.jpg);
+    grid-area: main;
+}
+
+.sobre-nosotros {
+    text-align: center;
+    margin: 50px;
+}
+
+.sobre-nosotros img {
+    width: 300px;
+    height: 300px;
+}
+
+
+.padre-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 2rem;
+    justify-items: center;
+}
+
+@media screen and (max-width: 992px) {
+    .padre-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .padre-cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+.publicidad {
+    background-image: url(../img/fondoclaro4.jpg);
+    grid-area: aside;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.publicidad div img {
+    width: 150px;
+    height: 150px;
+}
+
+.pie {
+    background-color: #78939a;
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.pie div img {
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+}
+
+@media screen and (max-width:1200px) {
+    .grid-container {
+        width: 100%;
+        margin: 0;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 300px 100px auto 250px 100px;
+        grid-template-areas:
+            "header header"
+            "nav nav"
+            "main main"
+            "aside aside"
+            "footer footer"
+        ;
+    }
+
+    .publicidad {
+        flex-direction: row;
+    }
+}
+
+@media screen and (max-width:580px) {
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 300px 100px auto 450px 100px;
+        grid-template-areas:
+            "header"
+            "nav"
+            "main"
+            "aside"
+            "footer"
+        ;
+    }
+
+    .menu ul {
+        flex-direction: column;
+    }
+
+    .conocemos {
+        flex-direction: column;
+    }
+
+    .publicidad {
+        flex-direction: column;
+    }
+}
+
+/* DESKTOP FIRST */
+/* LA GRILLA PRINCIPAL */
+
+#grilla-body{
+    display: grid;
+    grid-template-areas:
+        "cabecera cabecera cabecera"
+        "productos productos productos"
+        "banner banner banner"
+        "footer footer footer";
+
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/*HEADER O CABECERA*/
+#header-profe {
+    grid-area: cabecera;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+@media screen and (max-width: 767px) {
+    #header-profe {
+        flex-direction: column;
+    }
+}
+
+.logo {
+    height: 5rem;
+    /*El rotate solo recibe valores en deg (degrees) = grados*/
+    transform: rotate(100deg);
+}
+
+/* :hover es la acción de posar el mouse sobre un elemento */
+.logo:hover {
+    transform: scale(2);
+}
+
+#navegacion-profe {
+    display: flex;
+    gap: .8rem;
+}
+
+@media screen and (max-width: 399px) {
+    #navegacion-profe {
+        flex-direction: column;
+    }
+}
+
+#navegacion-profe li {
+    background-color: blue;
+    padding: .3rem 1rem;
+    /*La transition se declara sobre el elemento sin hover*/
+    transition: all .5s;
+}
+
+#navegacion-profe li.activa {
+    background-color: green;
+}
+
+#navegacion-profe li:hover {
+    background-color: green;
+}
+
+/*PRODUCTOS*/
+#productos-profe {
+    grid-area: productos;
+}
+
+#productos-profe h2,
+#productos-profe p {
+    text-align: center;
+}
+
+.padre-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 2rem;
+    justify-items: center;
+}
+
+@media screen and (max-width: 992px) {
+    .padre-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .padre-cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.card-profe {
+    width: 16rem;
+    border: solid 2px gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+.card-profe img {
+    height: 12rem;
+}
+
+/*BANNER*/
+#banner-profe {
+    grid-area: banner;
+    background-color: rgb(207, 196, 181);
+    margin-top: 4rem;
+    padding: 2rem;
+}
+
+#banner-profe h2 {
+    text-align: center;
+}
+
+.padre-banners {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+}
+
+@media screen and (max-width: 992px) {
+    .padre-banners {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .padre-banners {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.banners-caracteristicas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#footer {
+    grid-area: footer;
+    background-color: #78939a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#footer div img {
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+}
+
+@keyframes un_efecto {
+    0% {
+        width: 100px;
+    }
+
+    10% {
+        width: 50px;
+    }
+
+    25% {
+        width: 300px;
+    }
+
+    50% {
+        width: 200px;
+        background-color: red;
+    }
+
+    75% {
+        width: 300px;
+    }
+
+    100% {
+        width: 100px;
+        background-color: green;
+    }
+}
+
+
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+input:focus {
+    transform: scale(1.5, 1.5);
+    outline: none;
+}
+
+/*ANIMACION CON KEYFRAMES*/
+.barra-progreso {
+    margin-top: 30px;
+    width: 100%;
+    border: solid 1px;
+    height: 7px;
+}
+
+.barra-completando {
+    border: solid 1px;
+    height: 6px;
+    width: 30%;
+    background-color: red;
+
+    /*Indicar que la animacion funcione*/
+    animation: cargando 1s infinite;
+}
+
+/* El identifier de las keyframes es el nombre */
+@keyframes cargando {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 30%;
+    }
+}
+
+h1 {
+    animation-duration: 2s;
+    animation-name: aparecer;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.linea-horizontal {
+    background-color: black;
+    width: 60%;
+    height: 3px;
+}
