@@ -78,11 +78,10 @@ img {
 
 .logo {
     height: 5rem;
-    /*El rotate solo recibe valores en deg (degrees) = grados*/
     transform: rotate(100deg);
 }
 
-/* :hover es la acción de posar el mouse sobre un elemento */
+
 .logo:hover {
     transform: scale(2);
 }
@@ -333,6 +332,7 @@ img {
 }
 
 #productos-nuevo h2,
+
 #productos-nuevo p {
     text-align: center;
 }
