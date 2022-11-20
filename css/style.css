@@ -81,8 +81,8 @@ img {
     transform: rotate(100deg);
 }
 
-
-.logo:hover{
+/* :hover es la acción de posar el mouse sobre un elemento */
+.logo:hover {
     transform: scale(2);
 }
 
@@ -332,6 +332,7 @@ img {
 }
 
 #productos-nuevo h2,
+
 #productos-nuevo p {
     text-align: center;
 }
