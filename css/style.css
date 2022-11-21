@@ -78,13 +78,10 @@ img {
 
 .logo {
     height: 5rem;
-    transform: rotate(100deg);
+
 }
 
-/* :hover es la acción de posar el mouse sobre un elemento */
-.logo:hover {
-    transform: scale(2);
-}
+
 
 .encabezado img {
     width: 350px;
@@ -293,7 +290,7 @@ img {
 .logo {
     height: 5rem;
     padding: 30px;
-    transform: rotate(100deg);
+
 }
 
 .logo:hover {
