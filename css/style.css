@@ -54,7 +54,8 @@ img {
 
 
 .encabezado {
-    background-image: url(../img/fondoclaro2.jpg);
+   /* background-image: url(../img/fondoclaro2.jpg); */
+
     grid-area: header;
     display: flex;
     flex-direction: column;
@@ -75,12 +76,6 @@ img {
         flex-direction: column;
     }
 }
-
-.logo {
-    height: 5rem;
-
-}
-
 
 
 .encabezado img {
@@ -111,15 +106,19 @@ img {
     justify-content: space-around;
     align-items: center;
     height: 100%;
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+
 }
 
 .menu ul li a {
     text-decoration: none;
-    color: rgb(5, 0, 0);
+    color: rgb(148, 148, 148);
+
 }
 
+
 .contenido {
-    background-image: url(../img/fondo.jpg);
+    background-image: url(../img/fondowood.jpg);
     grid-area: main;
 }
 
@@ -184,6 +183,11 @@ img {
 .publicidad div img {
     width: 150px;
     height: 150px;
+}
+
+.centrado h2 {
+    display: flex;
+    margin: 120px;
 }
 
 #banner-abuelo {
@@ -334,36 +338,6 @@ img {
     text-align: center;
 }
 
-@keyframes un_efecto {
-    0% {
-        width: 100px;
-    }
-
-    10% {
-        width: 50px;
-    }
-
-    25% {
-        width: 300px;
-    }
-
-    50% {
-        width: 200px;
-        background-color: red;
-    }
-
-    75% {
-        width: 300px;
-    }
-
-    100% {
-        width: 100px;
-        background-color: green;
-    }
-}
-
-
-
 
 form {
     display: flex;
@@ -375,16 +349,6 @@ form {
 input:focus {
     transform: scale(1.5, 1.5);
     outline: none;
-}
-
-@keyframes cargando {
-    0% {
-        width: 0;
-    }
-
-    100% {
-        width: 30%;
-    }
 }
 
 h1 {
