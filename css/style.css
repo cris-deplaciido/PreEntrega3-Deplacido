@@ -7,6 +7,10 @@ body {
     background-image: url(../img/fondowood.jpg);
 }
 
+h1 {
+    text-align: center;
+}
+
 h2 {
     text-align: center;
 }
@@ -36,7 +40,7 @@ img {
     grid-template-areas:
         "header header header"
         "nav nav nav"
-        "main main aside"
+        "main main main"
         "footer footer footer"
     ;
 }
@@ -169,27 +173,6 @@ img {
 
 }
 
-
-.publicidad {
-    background-image: url(../img/fondoclaro4.jpg);
-    grid-area: aside;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-.publicidad div img {
-    width: 150px;
-    height: 150px;
-}
-
-.centrado h2 {
-    display: flex;
-    margin: 120px;
-}
-
 #banner-abuelo {
     grid-area: banner;
     background-color: rgb(207, 196, 181);
@@ -250,12 +233,11 @@ img {
         width: 100%;
         margin: 0;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 300px 100px auto 250px 100px;
+        grid-template-rows: 300px 100px auto 100px;
         grid-template-areas:
             "header header"
             "nav nav"
             "main main"
-            "aside aside"
             "footer footer"
         ;
     }
@@ -292,14 +274,14 @@ img {
 }
 
 .logo {
-    height: 5rem;
+    height: 15rem;
     padding: 30px;
 
 }
 
-.logo:hover {
+/*.logo:hover {
     transform: scale(2);
-}
+}*/
 
 #navegacion-menu {
     display: flex;
@@ -368,12 +350,6 @@ h1 {
     }
 }
 
-.linea-horizontal {
-    background-color: rgb(19, 1, 1);
-    width: 60%;
-    height: 3px;
-
-}
 
 #header-flex {
     display: flex;
@@ -410,10 +386,16 @@ h1 {
 
 
 .tamano {
-    width: 500px;
-    height: 500px;
+    width: 700px;
+    height: 700px;
 }
 
 .set {
     margin: 80px;
+    border: 2px solid black;
+}  
+
+#carouselExampleIndicators {
+    width: 60%;
+    margin: 0 auto ;
 }
