@@ -58,7 +58,7 @@ img {
 
 
 .encabezado {
-   /* background-image: url(../img/fondoclaro2.jpg); */
+    /* background-image: url(../img/fondoclaro2.jpg); */
 
     grid-area: header;
     display: flex;
@@ -67,19 +67,6 @@ img {
     align-items: center;
 }
 
-#header-options {
-    grid-area: cabecera;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-bottom: 4rem;
-}
-
-@media screen and (max-width: 767px) {
-    #header-options {
-        flex-direction: column;
-    }
-}
 
 
 .encabezado img {
@@ -181,7 +168,7 @@ img {
 }
 
 #banner-abuelo h2 {
-    text-align:  center;
+    text-align: center;
 }
 
 .padre-banners {
@@ -283,31 +270,6 @@ img {
     transform: scale(2);
 }*/
 
-#navegacion-menu {
-    display: flex;
-    gap: .8rem;
-}
-
-@media screen and (max-width: 399px) {
-    #navegacion-menu {
-        flex-direction: column;
-    }
-}
-
-#navegacion-menu li {
-    background-color: rgb(2, 2, 19);
-    padding: .3rem 1rem;
-
-    transition: all .5s;
-}
-
-#navegacion-menu li.activa {
-    background-color: rgba(157, 184, 38, 0.507);
-}
-
-#navegacion-menu li:hover {
-    background-color: rgba(189, 192, 32, 0.671);
-}
 
 
 #productos-nuevo {
@@ -352,13 +314,21 @@ h1 {
 
 
 #header-flex {
+    grid-area: cabecera;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     background-image: url(/img/fondowood);
     border: 1px solid black;
+
 }
 
+
+@media screen and (max-width: 767px) {
+    #header-flex {
+        flex-direction: column;
+    }
+}
 
 #header-flex img {
     width: 200px;
@@ -393,9 +363,11 @@ h1 {
 .set {
     margin: 80px;
     border: 2px solid black;
-}  
+    justify-content: space-evenly;
+}
 
 #carouselExampleIndicators {
-    width: 60%;
-    margin: 0 auto ;
+    width: 50%;
+    margin: 0 auto;
 }
+
