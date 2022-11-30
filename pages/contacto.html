@@ -27,61 +27,57 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div class="navbar-nav">
-                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                            <a class="nav-link" href="../index.html">Inicio</a>
                             <a class="nav-link" href="../pages/galeria.html">Galeria</a>
                             <a class="nav-link" href="../pages/ubicacion.html">Ubicacion</a>
-                            <a class="nav-link" href="../pages/contacto.html">Contacto</a>
-                            <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
+                            <a class="nav-link active" aria-current="page"   href="../pages/contacto.html">Contacto</a>
+                            <a class="nav-link " href="../pages/nosotros.html">Nosotros</a>
                         </div>
                     </div>
                 </div>
             </nav>
     </header>
 
+    <section class="container" >
+        <form  id="form"  class="row b"> 
 
-    <section class="container-fluid">
-        <h2>Contactanos</h2>
-            <div class="row border">
-
-                <legend>Tus datos personales</legend>
-                <div class="input-group mb-3" >
-                    <span class="input-group-text" id="basic-addon1">Nombre</span>
-                    <input type="text" class="form-control" placeholder="tu nombre" aria-label="Username"
-                        aria-describedby="basic-addon1">
-                </div>
-                        <legend>Tus datos personales</legend>
-                <div class="input-group mb-3">
-                    <span class="input-group-text" id="basic-addon1">Nombre</span>
-                    <input type="text" class="form-control" placeholder="tu nombre" aria-label="Username"
-                        aria-describedby="basic-addon1">
-                </div>
-
+            <div class="col-6" >
                 <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label">Dejanos tu mensaje</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <label for="emailInput"><strong>Email</strong></label>
+                    <input id="emailInput" class="form-control"  type="Email" placeholder="Escribe Tu Email"> 
                 </div>
-
-                
+        
                 <div class="mb-3">
-                    <input class="btn btn-dark" type="submit" value="Enviar formulario">
-                    <input class="btn btn-dark" type="reset" value="Limpiar Formulario">
+                    <label for="nombreInput"><strong>Nombre</strong></label>
+                    <input id="nombreInput" class="form-control"  type="Nombre" placeholder="Escribe tu Nombre" >
                 </div>
-                
-                <div class="col">
-                    <p>dfknksdfjnkdfnkds</p>
+    
+                <div class="mb-3">
+                    <label for="comentId" class="form-label"><strong>Dejanos tu Comentario</strong> </label>
+                    <textarea id="comentId" class="form-control" cols="50" rows="10"></textarea>
                 </div>
-
+    
+                <div class="mb-3">
+                    <input class="btn btn-dark" type="submit" value="Enviar">
+                    <input class="btn btn-dark" type="reset" value="Borrar Formulario">
+                </div>
             </div>
 
+        </form>
     </section>
+
 
 
     <footer class="piso">
         <div class="wow animate__animated animate__bounce">
-            <img src="../img/facebook.png" alt="">
-            <img src="../img/instagram.png" alt="">
-            <img src="../img/whatsapp.png" alt="">
-            <p>©Todos los derechos reservados 2022</p>
+            
+            <div class="col">
+                <img src="../img/facebook.png" alt="">
+                <img src="../img/instagram.png" alt="">
+                <img src="../img/whatsapp.png" alt="">
+                <p>©Todos los derechos reservados 2022</p>
+            </div>
+            
         </div>
     </footer>
 

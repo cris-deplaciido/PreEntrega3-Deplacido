@@ -11,8 +11,10 @@ h1 {
     text-align: center;
 }
 
-h2 {
+
+h3 {
     text-align: center;
+    margin: 100px;
 }
 
 a {
@@ -129,6 +131,7 @@ img {
     grid-template-columns: repeat(3, 1fr);
     row-gap: 2rem;
     justify-items: center;
+    margin: 100px;
 }
 
 @media screen and (max-width: 992px) {
@@ -175,6 +178,7 @@ img {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     justify-items: center;
+    margin-top: 50px;
 }
 
 @media screen and (max-width: 992px) {
@@ -319,7 +323,7 @@ h1 {
     justify-content: space-evenly;
     align-items: center;
     background-image: url(/img/fondowood);
-    border: 1px solid black;
+    
 
 }
 
@@ -347,12 +351,12 @@ h1 {
     font-size: 1.9rem;
 }
 
-.section-flex {
+/* .section-flex {
     display: flex;
     border: 2px solid black;
     justify-content: center;
     padding: 30px;
-}
+} */
 
 
 .tamano {
@@ -371,3 +375,18 @@ h1 {
     margin: 0 auto;
 }
 
+.lista-direccion {
+    text-align: center;
+
+}
+
+#form div {
+    
+    background-color: rgba(33, 87, 131, 0.945);
+
+}
+
+#fuente p {
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-size: 17px;
+}
