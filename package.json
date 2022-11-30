@@ -1,0 +1,19 @@
+{
+  "name": "preentrega2-deplacido",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cris-deplaciido/PreEntrega2-Deplacido.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cris-deplaciido/PreEntrega2-Deplacido/issues"
+  },
+  "homepage": "https://github.com/cris-deplaciido/PreEntrega2-Deplacido#readme"
+}

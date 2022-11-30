@@ -11,6 +11,7 @@ h1 {
     text-align: center;
 }
 
+
 h3 {
     text-align: center;
     margin: 100px;
@@ -29,31 +30,46 @@ img {
     max-width: 100%;
 }
 
+
 .grid-container {
     width: 80%;
     margin: auto;
     color: black;
-    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 300px 100px auto 100px;
-    grid-template-areas: "header header header" "nav nav nav" "main main main" "footer footer footer";
+    grid-template-areas:
+        "header header header"
+        "nav nav nav"
+        "main main main"
+        "footer footer footer"
+    ;
 }
 
 #grilla-body {
     display: grid;
-    grid-template-areas: "cabecera cabecera cabecera" "productos productos productos" "banner banner banner" "footer footer footer";
+    grid-template-areas:
+        "cabecera cabecera cabecera"
+        "productos productos productos"
+        "banner banner banner"
+        "footer footer footer";
+
     grid-template-columns: repeat(3, 1fr);
 }
 
+
 .encabezado {
     /* background-image: url(../img/fondoclaro2.jpg); */
+
     grid-area: header;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
+
 
 .encabezado img {
     width: 350px;
@@ -84,12 +100,15 @@ img {
     align-items: center;
     height: 100%;
     background-image: linear-gradient(to right, #434343 0%, black 100%);
+
 }
 
 .menu ul li a {
     text-decoration: none;
     color: rgb(148, 148, 148);
+
 }
+
 
 .contenido {
     background-image: url(../img/fondowood.jpg);
@@ -105,6 +124,7 @@ img {
     width: 300px;
     height: 300px;
 }
+
 
 .padre-cards {
     display: grid;
@@ -140,6 +160,7 @@ img {
 
 .card-hijo img {
     height: 250px;
+
 }
 
 #banner-abuelo {
@@ -180,6 +201,7 @@ img {
     align-items: center;
 }
 
+
 .piso {
     background-color: #78939a;
     grid-area: footer;
@@ -187,6 +209,7 @@ img {
     justify-content: center;
     align-items: center;
     text-align: center;
+
 }
 
 .piso div img {
@@ -195,13 +218,19 @@ img {
     margin: 10px;
 }
 
-@media screen and (max-width: 1200px) {
+
+@media screen and (max-width:1200px) {
     .grid-container {
         width: 100%;
         margin: 0;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 300px 100px auto 100px;
-        grid-template-areas: "header header" "nav nav" "main main" "footer footer";
+        grid-template-areas:
+            "header header"
+            "nav nav"
+            "main main"
+            "footer footer"
+        ;
     }
 
     .publicidad {
@@ -209,11 +238,17 @@ img {
     }
 }
 
-@media screen and (max-width: 580px) {
+@media screen and (max-width:580px) {
     .grid-container {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 300px 100px auto 450px 100px;
-        grid-template-areas: "header" "nav" "main" "aside" "footer";
+        grid-template-areas:
+            "header"
+            "nav"
+            "main"
+            "aside"
+            "footer"
+        ;
     }
 
     .menu ul {
@@ -232,19 +267,25 @@ img {
 .logo {
     height: 15rem;
     padding: 30px;
+
 }
 
 /*.logo:hover {
     transform: scale(2);
 }*/
+
+
+
 #productos-nuevo {
     grid-area: productos;
 }
 
 #productos-nuevo h2,
+
 #productos-nuevo p {
     text-align: center;
 }
+
 
 form {
     display: flex;
@@ -264,6 +305,7 @@ h1 {
     animation-iteration-count: infinite;
 }
 
+
 @keyframes aparecer {
     0% {
         opacity: 0;
@@ -274,13 +316,17 @@ h1 {
     }
 }
 
+
 #header-flex {
     grid-area: cabecera;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     background-image: url(/img/fondowood);
+    
+
 }
+
 
 @media screen and (max-width: 767px) {
     #header-flex {
@@ -311,6 +357,8 @@ h1 {
     justify-content: center;
     padding: 30px;
 } */
+
+
 .tamano {
     width: 700px;
     height: 700px;
@@ -329,15 +377,16 @@ h1 {
 
 .lista-direccion {
     text-align: center;
+
 }
 
 #form div {
+    
     background-color: rgba(33, 87, 131, 0.945);
+
 }
 
 #fuente p {
-    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-    font-size: 17px;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-size: 17px;
 }
-
-/*# sourceMappingURL=style.css.map */
