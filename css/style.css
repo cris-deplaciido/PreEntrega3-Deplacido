@@ -13,7 +13,7 @@ h1 {
 
 h3 {
   text-align: center;
-  margin: 40px;
+  margin: 100px;
 }
 
 a {
@@ -111,7 +111,7 @@ img {
   grid-template-columns: repeat(3, 1fr);
   row-gap: 2rem;
   justify-items: center;
-  margin: 0px;
+  margin: 100px;
 }
 
 @media screen and (max-width: 992px) {
@@ -143,19 +143,19 @@ img {
 #banner-abuelo {
   grid-area: banner;
   background-color: rgb(207, 196, 181);
-  margin-top: 90px;
-  padding: 0px;
+  margin-top: 4rem;
+  padding: 2rem;
 }
 
 #banner-abuelo h2 {
   text-align: center;
 }
 
-/*.padre-banners {
+.padre-banners {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   justify-items: center;
-  margin-top: 2px;
+  margin-top: 50px;
 }
 
 @media screen and (max-width: 992px) {
@@ -169,8 +169,7 @@ img {
     flex-direction: column;
     align-items: center;
   }
-} */
-
+}
 .banners-caracteristicas {
   display: flex;
   flex-direction: column;
@@ -178,7 +177,7 @@ img {
 }
 
 .piso {
-  background-color: hwb(191 49% 34%);
+  background-color: #78939a;
   grid-area: footer;
   display: flex;
   justify-content: center;
@@ -190,7 +189,6 @@ img {
   width: 30px;
   height: 30px;
   margin: 10px;
-  margin-top: 100px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -198,7 +196,7 @@ img {
     width: 100%;
     margin: 0;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 300px 100px auto 200px;
+    grid-template-rows: 300px 100px auto 100px;
     grid-template-areas: "header header" "nav nav" "main main" "footer footer";
   }
   .publicidad {
@@ -208,8 +206,8 @@ img {
 @media screen and (max-width: 580px) {
   .grid-container {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 300px 100px auto 450px 200px;
-    grid-template-areas: "header" "nav" "main" "footer";
+    grid-template-rows: 300px 100px auto 450px 100px;
+    grid-template-areas: "header" "nav" "main" "aside" "footer";
   }
   .menu ul {
     flex-direction: column;
@@ -303,7 +301,6 @@ h1 {
 .tamano {
   width: 700px;
   height: 700px;
-  align-items: center;
 }
 
 .set {
@@ -328,8 +325,10 @@ h1 {
 #fuente p {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-size: 17px;
-  
 }
 
+#carouselExampleIndicators {
+  height: 50%;
+}
 
 /*# sourceMappingURL=style.css.map */
