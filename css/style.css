@@ -13,7 +13,7 @@ h1 {
 
 h3 {
   text-align: center;
-  margin: 30px;
+  margin: 50px;
 }
 
 a {
@@ -152,23 +152,24 @@ img {
 }
 
 /*.padre-banners {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  justify-items: center;
-  margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    margin-top: 50px;
 }
 
 @media screen and (max-width: 992px) {
-  .padre-banners {
-    grid-template-columns: repeat(2, 1fr);
-  }
+    .padre-banners {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
+
 @media screen and (max-width: 767px) {
-  .padre-banners {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+    .padre-banners {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }*/
 .banners-caracteristicas {
   display: flex;
