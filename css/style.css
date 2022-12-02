@@ -13,7 +13,7 @@ h1 {
 
 h3 {
   text-align: center;
-  margin: 100px;
+  margin: 30px;
 }
 
 a {
@@ -151,7 +151,7 @@ img {
   text-align: center;
 }
 
-.padre-banners {
+/*.padre-banners {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   justify-items: center;
@@ -169,7 +169,7 @@ img {
     flex-direction: column;
     align-items: center;
   }
-}
+}*/
 .banners-caracteristicas {
   display: flex;
   flex-direction: column;
