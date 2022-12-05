@@ -1,0 +1,57 @@
+.grid-container {
+    width: 80%;
+    margin: auto;
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 300px 100px auto 100px;
+    grid-template-areas:
+        "header header header"
+        "nav nav nav"
+        "main main main"
+        "footer footer footer";
+    }
+
+
+    @media screen and (max-width:1200px) {
+        .grid-container {
+            width: 100%;
+            margin: 0;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 300px 100px auto 100px;
+            grid-template-areas:
+                "header header"
+                "nav nav"
+                "main main"
+                "footer footer"
+            ;
+        }
+    
+        .publicidad {
+            flex-direction: row;
+        }
+    }
+
+    .publicidad {
+        flex-direction: column;
+    }
+    
+    @media screen and (max-width:580px) { 
+        .grid-container {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 300px 100px auto 450px 100px;
+            grid-template-areas:
+                "header"
+                "nav"
+                "main"
+                "aside"
+                "footer";  
+            }     
+            }
+
+            #carouselExampleIndicators {
+                width: 50%;
+                height: 50%;
+                margin: 0 auto;
+            }

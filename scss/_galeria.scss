@@ -1,0 +1,125 @@
+
+#grilla-body {
+    display: grid;
+    grid-template-areas:
+        "cabecera cabecera cabecera"
+        "productos productos productos"
+        "banner banner banner"
+        "footer footer footer";
+
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+#header-flex {
+    grid-area: cabecera;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: url(/img/fondowood);
+    
+
+}
+
+
+@media screen and (max-width: 767px) {
+    #header-flex {
+        flex-direction: column;
+    }
+}
+
+#header-flex img {
+    width: 200px;
+    height: 200px;
+    padding-right: 12%;
+    margin-top: 10px;
+}
+
+
+#productos-nuevo {
+    grid-area: productos;
+}
+
+#productos-nuevo h2 {
+    text-align: center;
+}
+
+#productos-nuevo p {
+    text-align: center;
+}
+
+
+.padre-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 2rem;
+    justify-items: center;
+    margin: 100px;
+}
+
+@media screen and (max-width: 992px) {
+    .padre-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .padre-cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.card-hijo {
+    width: 250px;
+    border: solid 2px rgb(26, 3, 3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    background-color: navajowhite;
+}
+
+.card-hijo img {
+    height: 250px;
+
+}
+
+#banner-abuelo {
+    grid-area: banner;
+    background-color: rgb(207, 196, 181);
+    margin-top: 4rem;
+    padding: 2rem;
+}
+
+#banner-abuelo h2 {
+    text-align: center;
+}
+
+/*.padre-banners {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    margin-top: 50px;
+}
+
+@media screen and (max-width: 992px) {
+    .padre-banners {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .padre-banners {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}*/
+
+.banners-caracteristicas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

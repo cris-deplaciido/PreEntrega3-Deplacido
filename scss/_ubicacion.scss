@@ -1,0 +1,35 @@
+
+#mapa p {
+    color: antiquewhite;
+    font-size: medium;
+}
+
+#mapa {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: rgb(0, 0, 0);
+    height: 700px;
+    background-color: rgb(44, 44, 44);
+    align-items: center;
+    text-align: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+.lista-direccion {
+    text-align: center;
+
+}
+
+
+.tamano {
+    width: 700px;
+    height: 700px;
+}

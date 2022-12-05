@@ -11,6 +11,20 @@ h1 {
   text-align: center;
 }
 
+h1 {
+  animation-duration: 5s;
+  animation-name: aparecer;
+  animation-iteration-count: infinite;
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 h3 {
   text-align: center;
   margin: 50px;
@@ -29,6 +43,11 @@ img {
   max-width: 100%;
 }
 
+.logo {
+  height: 15rem;
+  padding: 30px;
+}
+
 .grid-container {
   width: 80%;
   margin: auto;
@@ -40,70 +59,71 @@ img {
   grid-template-areas: "header header header" "nav nav nav" "main main main" "footer footer footer";
 }
 
+@media screen and (max-width: 1200px) {
+  .grid-container {
+    width: 100%;
+    margin: 0;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 300px 100px auto 100px;
+    grid-template-areas: "header header" "nav nav" "main main" "footer footer";
+  }
+  .publicidad {
+    flex-direction: row;
+  }
+}
+.publicidad {
+  flex-direction: column;
+}
+
+@media screen and (max-width: 580px) {
+  .grid-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 300px 100px auto 450px 100px;
+    grid-template-areas: "header" "nav" "main" "aside" "footer";
+  }
+}
+#carouselExampleIndicators {
+  width: 50%;
+  height: 50%;
+  margin: 0 auto;
+}
+
 #grilla-body {
   display: grid;
   grid-template-areas: "cabecera cabecera cabecera" "productos productos productos" "banner banner banner" "footer footer footer";
   grid-template-columns: repeat(3, 1fr);
 }
 
-.encabezado {
-  /* background-image: url(../img/fondoclaro2.jpg); */
-  grid-area: header;
+#header-flex {
+  grid-area: cabecera;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
+  background-image: url(/img/fondowood);
 }
 
-.encabezado img {
-  width: 350px;
-  height: 250px;
+@media screen and (max-width: 767px) {
+  #header-flex {
+    flex-direction: column;
+  }
+}
+#header-flex img {
+  width: 200px;
+  height: 200px;
+  padding-right: 12%;
+  margin-top: 10px;
 }
 
-.conocemos {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+#productos-nuevo {
+  grid-area: productos;
+}
+
+#productos-nuevo h2 {
   text-align: center;
 }
 
-.conocemos img {
-  width: 300px;
-  height: 350px;
-}
-
-.menu {
-  background-image: url(../img/fondo.jpg);
-  grid-area: nav;
-}
-
-.menu ul {
-  list-style: none;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 100%;
-  background-image: linear-gradient(to right, #434343 0%, black 100%);
-}
-
-.menu ul li a {
-  text-decoration: none;
-  color: rgb(148, 148, 148);
-}
-
-.contenido {
-  background-image: url(../img/fondowood.jpg);
-  grid-area: main;
-}
-
-.ingresos {
+#productos-nuevo p {
   text-align: center;
-  margin: 50px;
-}
-
-.ingresos img {
-  width: 300px;
-  height: 300px;
 }
 
 .padre-cards {
@@ -177,6 +197,55 @@ img {
   align-items: center;
 }
 
+#mapa p {
+  color: antiquewhite;
+  font-size: medium;
+}
+
+#mapa {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  color: rgb(0, 0, 0);
+  height: 700px;
+  background-color: rgb(44, 44, 44);
+  align-items: center;
+  text-align: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 2rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.lista-direccion {
+  text-align: center;
+}
+
+.tamano {
+  width: 700px;
+  height: 700px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 90px;
+}
+
+#form div {
+  background-color: rgba(33, 87, 131, 0.945);
+}
+
+#fuente {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 20px;
+  color: black;
+}
+
 .piso {
   background-color: #78939a;
   grid-area: footer;
@@ -190,146 +259,6 @@ img {
   width: 30px;
   height: 30px;
   margin: 10px;
-}
-
-@media screen and (max-width: 1200px) {
-  .grid-container {
-    width: 100%;
-    margin: 0;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 300px 100px auto 100px;
-    grid-template-areas: "header header" "nav nav" "main main" "footer footer";
-  }
-  .publicidad {
-    flex-direction: row;
-  }
-}
-@media screen and (max-width: 580px) {
-  .grid-container {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 300px 100px auto 450px 100px;
-    grid-template-areas: "header" "nav" "main" "aside" "footer";
-  }
-  .menu ul {
-    flex-direction: column;
-  }
-  .conocemos {
-    flex-direction: column;
-  }
-  .publicidad {
-    flex-direction: column;
-  }
-}
-.logo {
-  height: 15rem;
-  padding: 30px;
-}
-
-/*.logo:hover {
-    transform: scale(2);
-}*/
-#productos-nuevo {
-  grid-area: productos;
-}
-
-#productos-nuevo h2,
-#productos-nuevo p {
-  text-align: center;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-}
-
-input:focus {
-  transform: scale(1.5, 1.5);
-  outline: none;
-}
-
-h1 {
-  animation-duration: 5s;
-  animation-name: aparecer;
-  animation-iteration-count: infinite;
-}
-
-@keyframes aparecer {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-#header-flex {
-  grid-area: cabecera;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  background-image: url(/img/fondowood);
-}
-
-@media screen and (max-width: 767px) {
-  #header-flex {
-    flex-direction: column;
-  }
-}
-#header-flex img {
-  width: 200px;
-  height: 200px;
-  padding-right: 12%;
-  margin-top: 10px;
-}
-
-.lista-navegacion_flex {
-  display: flex;
-  gap: 1.9rem;
-  justify-content: center;
-}
-
-.lista-navegacion_flex li {
-  font-size: 1.9rem;
-}
-
-/* .section-flex {
-    display: flex;
-    border: 2px solid black;
-    justify-content: center;
-    padding: 30px;
-} */
-.tamano {
-  width: 700px;
-  height: 700px;
-}
-
-.set {
-  margin: 80px;
-  border: 2px solid black;
-  justify-content: space-evenly;
-}
-
-#carouselExampleIndicators {
-  width: 50%;
-  margin: 0 auto;
-}
-
-.lista-direccion {
-  text-align: center;
-}
-
-#form div {
-  background-color: rgba(33, 87, 131, 0.945);
-}
-
-#fuente p {
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  font-size: 17px;
-}
-
-#carouselExampleIndicators {
-  height: 50%;
 }
 
 /*# sourceMappingURL=style.css.map */
