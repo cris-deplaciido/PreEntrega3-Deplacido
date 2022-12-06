@@ -6,8 +6,13 @@ form {
 }
 
 
-#form div {
+#form {
     
-    background-color: rgba(33, 87, 131, 0.945);
+    div {
+        background-color: rgba(33, 87, 131, 0.945);
+    }
+}
 
+.formu {
+    margin-top: 50px;
 }

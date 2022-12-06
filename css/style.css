@@ -101,12 +101,6 @@ img {
   align-items: center;
   background-image: url(/img/fondowood);
 }
-
-@media screen and (max-width: 767px) {
-  #header-flex {
-    flex-direction: column;
-  }
-}
 #header-flex img {
   width: 200px;
   height: 200px;
@@ -114,14 +108,17 @@ img {
   margin-top: 10px;
 }
 
+@media screen and (max-width: 767px) {
+  #header-flex {
+    flex-direction: column;
+  }
+}
 #productos-nuevo {
   grid-area: productos;
 }
-
 #productos-nuevo h2 {
   text-align: center;
 }
-
 #productos-nuevo p {
   text-align: center;
 }
@@ -155,7 +152,6 @@ img {
   padding: 1rem;
   background-color: navajowhite;
 }
-
 .card-hijo img {
   height: 250px;
 }
@@ -166,32 +162,11 @@ img {
   margin-top: 4rem;
   padding: 2rem;
 }
-
 #banner-abuelo h2 {
   text-align: center;
 }
 
-/*.padre-banners {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    justify-items: center;
-    margin-top: 50px;
-}
-
-@media screen and (max-width: 992px) {
-    .padre-banners {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media screen and (max-width: 767px) {
-    .padre-banners {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-}*/
-.banners-caracteristicas {
+#banner-abuelo .banners-caracteristicas {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -240,10 +215,18 @@ form {
   background-color: rgba(33, 87, 131, 0.945);
 }
 
+.formu {
+  margin-top: 50px;
+}
+
 #fuente {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-size: 20px;
   color: black;
+}
+
+#nav {
+  background-color: rgb(0, 0, 0);
 }
 
 .piso {
