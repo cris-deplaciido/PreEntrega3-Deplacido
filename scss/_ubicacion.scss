@@ -5,20 +5,18 @@
 }
 
 #mapa {
-    display: flex;
-    flex-direction: column;
+    @include flex-centrado;
     align-content: center;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     color: rgb(0, 0, 0);
-    height: 500px;
-    width: 550px;
+    height: 400px;
+    width: 450px;
     background-color: rgb(44, 44, 44);
-    align-items: center;
     text-align: center;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-bottom: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
     margin-right: auto;
     margin-left: auto;
 }
@@ -31,6 +29,6 @@
 
 
 .tamano {
-    width: 500px;
-    height: 500px;
+    width: 400px;
+    height: 400px;
 }

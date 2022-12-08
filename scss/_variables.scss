@@ -1,4 +1,11 @@
 
-$bg-body: url(../img/fondowood.jpg);
+$bg-body: url(../img/fondowood.webp);
 $bg-footer:  #78939a;
 
+
+
+@mixin flex-centrado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

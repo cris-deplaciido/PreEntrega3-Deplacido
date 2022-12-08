@@ -4,7 +4,7 @@
 }
 
 body {
-  background-image: url(../img/fondowood.jpg);
+  background-image: url(../img/fondowood.webp);
 }
 
 h1 {
@@ -32,7 +32,7 @@ h3 {
 
 a {
   text-decoration: none;
-  color: white;
+  color: rgb(17, 16, 16);
 }
 
 ul {
@@ -161,12 +161,13 @@ img {
   background-color: rgb(207, 196, 181);
   margin-top: 4rem;
   padding: 2rem;
+  margin-bottom: 30px;
 }
 #banner-abuelo h2 {
   text-align: center;
 }
 
-#banner-abuelo .banners-caracteristicas {
+.banners-caracteristicas {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -180,18 +181,18 @@ img {
 #mapa {
   display: flex;
   flex-direction: column;
-  align-content: center;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  color: rgb(0, 0, 0);
-  height: 500px;
-  width: 550px;
-  background-color: rgb(44, 44, 44);
   align-items: center;
+  align-content: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: rgb(0, 0, 0);
+  height: 400px;
+  width: 450px;
+  background-color: rgb(44, 44, 44);
   text-align: center;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  padding-bottom: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
   margin-right: auto;
   margin-left: auto;
 }
@@ -201,14 +202,14 @@ img {
 }
 
 .tamano {
-  width: 500px;
-  height: 500px;
+  width: 400px;
+  height: 400px;
 }
 
 form {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: center;
   gap: 90px;
 }
 
@@ -221,7 +222,7 @@ form {
 }
 
 .lista-direccion {
-  margin-top: 60px;
+  align-items: center;
 }
 
 #fuente {
@@ -232,6 +233,12 @@ form {
 
 #nav {
   background-color: rgb(0, 0, 0);
+}
+
+#frente-negocio img {
+  width: 520px;
+  height: 550px;
+  margin-bottom: 50px;
 }
 
 .piso {

@@ -1,7 +1,5 @@
 form {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+    @include flex-centrado;
     gap: 90px;
 }
 
@@ -18,5 +16,6 @@ form {
 }
 
 .lista-direccion {
-    margin-top: 60px;
+    align-items: center;
+    
 }

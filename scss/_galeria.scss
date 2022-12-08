@@ -64,18 +64,14 @@
 
 @media screen and (max-width: 767px) {
     .padre-cards {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    @include flex-centrado;
     }
 }
 
 .card-hijo {
     width: 250px;
     border: solid 2px rgb(26, 3, 3);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex-centrado;
     padding: 1rem;
     background-color: navajowhite;
 
@@ -84,42 +80,21 @@
     }
 }
 
+
 #banner-abuelo {
     grid-area: banner;
     background-color: rgb(207, 196, 181);
     margin-top: 4rem;
     padding: 2rem;
+    margin-bottom: 30px;
 
     h2 {
         text-align: center;
     }
 }
 
-#banner-abuelo
 
-/*.padre-banners {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    justify-items: center;
-    margin-top: 50px;
-}
-
-@media screen and (max-width: 992px) {
-    .padre-banners {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media screen and (max-width: 767px) {
-    .padre-banners {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-}*/
 
 .banners-caracteristicas {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex-centrado
 }
